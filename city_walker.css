@@ -1,12 +1,94 @@
 body{
     font-family: 'Inter', sans-serif;
+    width:100%;
+    height: 100Vh;
+
 }
-*{
-    padding: 0px;
-    margin: 0px;
+*,p,h1,h2{
+    /* padding: 0px !important; */
+    margin: 0px !important;
 }
+/* nav section */
 
 nav>img{
     width: 100px;
     height: 60px;
 }
+nav{
+
+    /* border: 2px solid green; */
+    /* width: 20rem; */
+    padding: 15px !important;
+    position: absolute;
+}
+
+/* first section starts here*/
+section{
+    height: 58.5rem;
+    width: 110rem;
+    background: #f5dd9c;
+    padding: 0px;
+    position: relative;
+}
+section>div{
+   /* border: 2px solid red; */
+   height: 100%;
+   /* width: 110em; */
+   
+}
+
+/* section>div.row{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+} */
+
+section>div.row>div.col-md-8{
+    border: 2px solid red;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+section>div.row>div.col-md-8>div.row>.form-sec{
+    /* width: 70rem; */
+    height: 40rem;
+    border: 2px solid rgb(29, 13, 13);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px !important; */
+}
+
+section>div.row>div.col-md-8>.row>form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+section>div.row>div.col-md-8>.row>form input{
+    width: 446px;
+    height: 63.98px;
+}
+
+section>div.row>div.col-md-4{
+    background-image: url("/img/travler.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgb(238, 218, 36);
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+button{
+    font-size: 24px !important;
+    width: 446px;
+    height: 62px;
+    background: #F48222 !important;
+
+}
+
