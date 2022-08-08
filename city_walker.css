@@ -1,7 +1,7 @@
 body{
     font-family: 'Inter', sans-serif;
-    width:100%;
-    height: 100Vh;
+    /* width:100%;
+    height: 100Vh; */
 
 }
 *,p,h1,h2{
@@ -11,15 +11,20 @@ body{
 /* nav section */
 
 nav>img{
-    width: 100px;
-    height: 60px;
+    width: 150px;
+    height: 88.67px;
 }
 nav{
 
     /* border: 2px solid green; */
     /* width: 20rem; */
-    padding: 15px !important;
-    position: absolute;
+    /* padding: 15px !important;
+    position: absolute; */
+    /* position: absolute; */
+    /* width: 159px;
+    height: 94px; */
+    /* left: 270px;
+    top: 18px; */
 }
 
 /* first section starts here*/
@@ -32,7 +37,7 @@ section{
 }
 section>div{
    /* border: 2px solid red; */
-   height: 100%;
+   min-height: 100%;
    /* width: 110em; */
    
 }
@@ -44,7 +49,7 @@ section>div{
 } */
 
 section>div.row>div.col-md-8{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -55,8 +60,8 @@ section>div.row>div.col-md-8{
 
 section>div.row>div.col-md-8>div.row>.form-sec{
     /* width: 70rem; */
-    height: 40rem;
-    border: 2px solid rgb(29, 13, 13);
+    height: 35rem;
+    /* border: 2px solid rgb(29, 13, 13); */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -70,8 +75,12 @@ section>div.row>div.col-md-8>.row>form{
     gap: 20px;
 }
 
+section>div.row>div.col-md-8>.row>form p{
+    font-Weight:400px;
+    font-Size:20px;
+}
 section>div.row>div.col-md-8>.row>form input{
-    width: 446px;
+    width: 380px;
     height: 63.98px;
 }
 
@@ -79,16 +88,129 @@ section>div.row>div.col-md-4{
     background-image: url("/img/travler.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2px solid rgb(238, 218, 36);
+    /* border: 2px solid rgb(238, 218, 36); */
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
+    /* height: 58.5rem !important; */
 }
 
 button{
     font-size: 24px !important;
-    width: 446px;
+    width: 380px;
     height: 62px;
     background: #F48222 !important;
 
 }
 
+/* ---Mobile view section start here--- */
+@media screen  and (max-width: 753px) {
+
+
+/* ======================================== */
+
+*,p,h1,h2{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+/* nav section */
+
+nav{
+
+    /* border: 2px solid green; */
+    /* width: 20rem; */
+    padding: 15px !important;
+}
+
+/* first section starts here*/
+section{
+    height: 100vh !important;
+    /* width: 110rem; */
+    background: #f5dd9c;
+    padding: 0px;
+    position: relative;
+}
+
+section>div.row{
+   /* border: 2px solid red; */
+   height: 100% !important;
+   /* width: 110em; */
+   margin-top: 0px !important;
+   
+}
+
+/* section>div.row{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+} */
+
+section>div.row>div.col-sm-12{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    padding: 0px ;
+    height: 100% !important;
+
+}
+
+section>div.row>div.col-md-8>div.row>.form-sec{
+    /* width: 70rem; */
+    height: 27rem;
+    /* border: 2px solid rgb(29, 13, 13); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    /* padding: 0px !important; */
+}
+
+section>div.row>div.col-md-8>.row>form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+section>div.row>div.col-md-8>.row>form p{
+    font-Weight:400px;
+    font-Size:18px;
+}
+section>div.row>div.col-md-8>.row>form input{
+    width: 255px;
+    height: 42px;
+}
+div.bt{
+    padding-top: 15px;
+}
+
+
+button{
+    font-size: 18px !important;
+    width: 255px;
+    height: 42px;
+    text-align: center;
+    /* padding: 10px; */
+    background: #F48222 !important;
+
+}
+
+section>div.row>div.col-md-4{
+    height: 50rem !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.showNow{
+
+}
+.hideNow{
+
+}
+
+}
+/* @media (width < 730) {
+    
+} */
