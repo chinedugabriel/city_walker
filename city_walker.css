@@ -32,7 +32,7 @@ section{
     height: 58.5rem;
     width: 110rem;
     background: #f5dd9c;
-    padding: 0px;
+    padding: 0px !important;
     position: relative;
 }
 section>div{
@@ -60,7 +60,7 @@ section>div.row>div.col-md-8{
 
 section>div.row>div.col-md-8>div.row>.form-sec{
     /* width: 70rem; */
-    height: 35rem;
+    height: 40rem;
     /* border: 2px solid rgb(29, 13, 13); */
     display: flex;
     flex-flow: column nowrap;
@@ -97,10 +97,54 @@ section>div.row>div.col-md-4{
 button{
     font-size: 24px !important;
     width: 380px;
-    height: 62px;
+    height: 50px;
     background: #F48222 !important;
+    border:2px solid #F48222;
+    border-radius:13px !important;
+    display: flex;
+    flex-flow: row nowrap !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
 }
+
+.b-g{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    width: 100rem;
+}
+
+.btc-find{
+    font-size: 24px !important;
+    width: 159px !important;
+    height: 50px;
+    background: #F48222 !important;
+    border:2px solid #F48222;
+    border-radius:13px !important;
+    display: flex;
+    flex-flow: row nowrap !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.btc-view{
+    font-size: 24px !important;
+    width: 254px;
+    height: 50px;
+    background: #F48222 !important;
+    border:2px solid #F48222;
+    border-radius:13px !important;
+    display: flex;
+    flex-flow: row nowrap !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
 button>img{
     width: 30px;
 }
@@ -147,11 +191,7 @@ section>div.row{
    
 }
 
-/* section>div.row{
-    border: 2px solid red;
-    height: 100%;
-    width: 100%;
-} */
+
 
 section>div.row>div.col-sm-12{
     /* border: 2px solid red; */
@@ -167,7 +207,7 @@ section>div.row>div.col-sm-12{
 
 section>div.row>div.col-md-8>div.row>.form-sec{
     /* width: 70rem; */
-    height: 27rem;
+    height: 28rem;
     /* border: 2px solid rgb(29, 13, 13); */
     display: flex;
     flex-flow: column nowrap;
@@ -200,14 +240,6 @@ button{
     font-size: 15px !important;
     width: 255px;
     height: 42px;
-    background: #F48222 !important;
-    border:2px solid #F48222;
-    border-radius:13px !important;
-    display: flex;
-    flex-flow: row nowrap !important;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 
 }
 
