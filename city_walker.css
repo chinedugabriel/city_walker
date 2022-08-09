@@ -101,12 +101,21 @@ button{
     background: #F48222 !important;
 
 }
+button>img{
+    width: 30px;
+}
+
+#view{
+    display: none;
+}
+
+
+/* ======================================== */
 
 /* ---Mobile view section start here--- */
 @media screen  and (max-width: 753px) {
 
 
-/* ======================================== */
 
 *,p,h1,h2{
     padding: 0px !important;
@@ -188,12 +197,17 @@ div.bt{
 
 
 button{
-    font-size: 18px !important;
+    font-size: 15px !important;
     width: 255px;
     height: 42px;
-    text-align: center;
-    /* padding: 10px; */
     background: #F48222 !important;
+    border:2px solid #F48222;
+    border-radius:13px !important;
+    display: flex;
+    flex-flow: row nowrap !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
 }
 
@@ -203,6 +217,16 @@ section>div.row>div.col-md-4{
     border-bottom-left-radius: 0px;
 }
 
+button>img{
+    width: 20px;
+}
+
+#view{
+    /* display:block; */
+    position: absolute;
+    top: 73%;
+    right: 8px;
+}
 .showNow{
 
 }
