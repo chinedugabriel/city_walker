@@ -86,6 +86,8 @@ section>div.row>div.col-md-8>.row>form input{
 
 section>div.row>div.col-md-4{
     background-image: url("/img/travler.jpg");
+    transition: background 2s ease;
+    /* background-image: url("/img/googleMap.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     /* border: 2px solid rgb(238, 218, 36); */
@@ -144,6 +146,20 @@ button{
     gap: 10px;
 
 }
+#go-back{
+    font-size: 24px !important;
+    width: 254px;
+    height: 50px;
+    background: #F48222 !important;
+    border:2px solid #F48222;
+    border-radius:13px !important;
+    display: flex;
+    flex-flow: row nowrap !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px;
+}
 
 button>img{
     width: 30px;
@@ -151,6 +167,14 @@ button>img{
 
 #view{
     display: none;
+}
+
+
+/* ======================================== */
+/* country/flag/details-section */
+#flag{
+    height: 200px;
+    width: 300px;
 }
 
 
@@ -237,7 +261,7 @@ div.bt{
 
 
 button{
-    font-size: 15px !important;
+    font-size: 18px !important;
     width: 255px;
     height: 42px;
 
