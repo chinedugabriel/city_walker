@@ -27,7 +27,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <div class="row m-0">
             <!-- col-md-8 -->
             <div class="col-sm-12 col-md-8 " id="map-details-section">
-                <div class="row px-2">
+                <div class="row px-2 ">
                     <div class="col-md-12 px-4 ">
                         <div class="row ">
                             <div class="col-md-12">
@@ -47,8 +47,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                             </div>
                             <div class="row my-2 mx-0 p-0">
                                 <div class="col-md-12" id="go-back">
-                                    <button class="text-white">
-                                       <img src="/img/back-arrow.png" alt="" srcset=""> Go back
+                                    <button class="text-white" onclick="toggleView()">
+                                       <img src="/img/back-arrow.png" alt="" > Go back
                                     </button>
                             </div>
                             </div>
@@ -56,7 +56,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 d-none">
+            <div class="col-sm-12 col-md-8 " id="find-section-form">
                 <div class="row">
                     <nav class="nav ">
                         <img src="/img/streetWalker_logo.png" alt="logo" >
@@ -79,25 +79,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                         <div class="row">
                             <div class="col-md-12">
                                 <p>City</p>
-                                <input type="text" name="" id="City" class="form-control">
+                                <input type="text" name="" id="city" class="form-control">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <p>From</p>
-                                <input type="text" name="" id="From" class="form-control">
+                                <input type="text" name="" id="from" class="form-control">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <p>To</p>
-                                <input type="text" name="" id="" class="form-control">
+                                <input type="text" name="" id="to" class="form-control">
                             </div>
                         </div>
 
                         <div class="row bt mt-md-2">
                             <div class="col-md-12 ">
-                                <button type="submit" class=" text-white" id="find-location">
+                                <button class=" text-white" id="find-location" onclick="testInput()">
                                     <img src="img/explore_img.png" alt="" >
                                     Find
                                 </button>
@@ -105,7 +105,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                         </div>
                         <div class="row bt mt-md-2">
                             <div class="col-md-12 ">
-                                <button type="submit" class=" text-white" id="find-location">            
+                                <button type="button" class=" text-white" id="view-location" onclick="toggleView()" name="True">            
                                     <img src="img/map-veiw.png" alt="" >
                                     <p>View location</p>
                                 </button>
@@ -115,7 +115,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 </div>
     
             </div>
-            <div class="col-sm-12 col-md-4 d-none d-xs-none d-sm-none d-md-block" id="map-section">
+            <div class="col-sm-12 col-md-4 " id="map-section">
             </div>
         </div>
     </section>

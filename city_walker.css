@@ -142,7 +142,7 @@ button{
     display: flex;
     flex-flow: row nowrap !important;
     align-items: center;
-    justify-content: center;
+    justify-content: cente/r;
     gap: 10px;
 
 }
@@ -167,6 +167,13 @@ button>img{
 
 #view{
     display: none;
+}
+/* section for map-details-section been hidden */
+#map-details-section{
+    display: none;
+}
+#map-section{
+    display: block;
 }
 
 
@@ -283,14 +290,13 @@ button>img{
     top: 73%;
     right: 8px;
 }
-.showNow{
 
-}
-.hideNow{
-
+#map-section{
+    display: none;
 }
 
 }
 /* @media (width < 730) {
     
 } */
+
