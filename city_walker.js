@@ -35,25 +35,27 @@ function testInput(){// this function is to test the input tags
 // }).catch(error => console.log(error))
 
 // function to toggle between location details and the find section
-let viewLocationButton = document.getElementById("view-location").name;
+let viewLocationButton = document.getElementById("view-location");
 let mapDetailsSection = document.getElementById("map-details-section");
 let mapSection = document.getElementById("map-section");
 let findSectionForm = document.getElementById("find-section-form");
-// viewLocationButton.name = true;
+mapDetailsSection.style.display === "none";
 
 let toggleView = ()=>{
     // console.log(viewLocationButton.name)
-    if(mapDetailsSection.style.display == "none" ){
+    if(mapDetailsSection.style.display === "none" ){
         
+
         findSectionForm.style.display = "none";
-        mapDetailsSection.style.display = "block";
-        mapSection.style.display = "block";
+        // mapDetailsSection.classList.add("place-center");
+        mapDetailsSection.style.display = "flex";
+        mapSection.style.display = "flex";
         // viewLocationButton.name = false;
         console.log(true);
     }else{
         mapDetailsSection.style.display = "none";
-        mapSection.style.display = "block";
-        findSectionForm.style.display = "block";
+        mapSection.style.display = "flex";
+        findSectionForm.style.display = "flex";
         // viewLocationButton.name = true;
         console.log(false);
     }
@@ -61,3 +63,5 @@ let toggleView = ()=>{
 }
 
 // toggleView()
+
+// add the .place-center class to the columns to position it properly
