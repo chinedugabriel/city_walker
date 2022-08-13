@@ -192,7 +192,6 @@ button>img{
     height: 41em !important;
     width:100% !important;
     gap: 20px;
-    /* padding: 30px !important; */
 }
 #country-detail-child-section>.row{
     width: 40rem;
@@ -200,20 +199,33 @@ button>img{
 
 
 #country-detail-child-section p{
-    /* width: 200px; */
     font-Weight:400px;
     font-Size:20px;
     /* border: 2px solid blue; */
     border-bottom: 1px solid rgb(255, 255, 255);
     margin-top: 10px !important;
 }
+#arrow-down>a>img{
+    width: 30px !important;
+}
 #arrow-down>a{
     background-color: #F48222;
-    height: 500px !important;
-    width: 500px !important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-view-map-section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+#btn-view-map-section{
+    display: none ;
+}
 
 /* ======================================== */
 
@@ -309,6 +321,7 @@ section>div.row>div.col-md-4{
     height: 50rem !important;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    position: relative;
 }
 
 button>img{
@@ -316,7 +329,6 @@ button>img{
 }
 
 #view{
-    /* display:block; */
     position: absolute;
     top: 73%;
     right: 8px;
@@ -348,7 +360,6 @@ button>img{
 
 
 #country-detail-child-section p{
-    /* width: 200px; */
     /* border: 2px solid blue; */
     border-bottom: 1px solid rgb(255, 255, 255);
     font-Weight:400px;
@@ -357,6 +368,15 @@ button>img{
 }
 
 /* ======================================== */
+.inner-map-section{
+    position: absolute;
+    width: 47px;
+    bottom: 150px;
+    right: 20px;
+}
+#btn-view-map-section{
+    display: block;
+}
 
 }
 /* End of mobile css */

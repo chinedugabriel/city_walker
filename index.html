@@ -24,7 +24,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <body>
     
     <section  class="container-fluid ">
-        <div class="row m-0">
+        <div class="row m-0" id="top-view">
             <!-- col-md-8 -->
             <div class="col-sm-12 col-md-8 " id="map-details-section">
                 <div class="row ">
@@ -49,14 +49,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                         <div class="row ">
                             <div class="col-md-12" id="go-back">
                                 <button class="text-white" onclick="toggleView()">
-                                   <img src="img/back-arrow.png" alt="" > Go back
+                                   <img src="img/back-arrow.png" alt="arrow-back-button" > Go back
                                 </button>
                             </div>
                         </div>
-                        <div class="row ">
+                        <div class="row" id="btn-view-map-section">
                             <div class="col-md-12" id="arrow-down">
-                                <a class="" href="#map-section">
-                                   <img src="img/arrow-down.png" alt="" >
+                                <a class="btn animate  animate  animate__shakeY" href="#map-section">
+                                   <img src="img/arrow-down.png" alt="arrow-down" >
                                 </a>
                             </div>
                         </div>
@@ -113,9 +113,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                             </div>
                         </div>
                         <div class="row bt mt-md-2">
-                            <div class="col-md-12 ">
-                                <button type="button" class=" text-white" id="view-location" onclick="toggleView()" name="True">            
-                                    <img src="img/map-veiw.png" alt="" >
+                            <div class="col-md-12">
+                                <button type="button" class=" text-white" id="view-location" onclick="toggleView()" >            
+                                    <img src="img/map-veiw.png" alt="arrow-up" >
                                     <p>View location</p>
                                 </button>
                             </div>
@@ -125,6 +125,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     
             </div>
             <div class="col-sm-12 col-md-4 " id="map-section">
+                <div class="row inner-map-section" id="btn-view-map-section">
+                    <div class="col-md-12" id="arrow-down">
+                        <a class="btn animate  animate__shakeY" href="#top-view" id="btn-scroll-to-top">
+                           <img src="img/arrow-up.png" alt="" >
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
