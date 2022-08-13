@@ -263,7 +263,7 @@ section>div.row>div.col-sm-12{
 section>div.row>div.col-md-8>div.row>.form-sec{
     /* width: 70rem; */
     height: 28rem !important;
-    /* border: 2px solid rgb(29, 13, 13); */
+    border: 2px solid rgb(29, 13, 13);
     display: flex !important;
     flex-flow: column nowrap !important;
     justify-content: center !important;
