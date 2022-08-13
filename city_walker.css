@@ -2,6 +2,7 @@ body{
     font-family: 'Inter', sans-serif;
     /* width:100%;
     height: 100Vh; */
+    background: #f5dd9c !important;
 }
 *,p,h1,h2{
     /* padding: 0px !important; */
@@ -11,7 +12,7 @@ body{
 
 nav>img{
     width: 150px;
-    height: 88.67px;
+    height: auto;
 }
 nav{
     /* border: 2px solid green; */
@@ -28,16 +29,16 @@ nav{
 section{
     height: 58.5rem;
     width: 110rem;
-    background: #f5dd9c;
+    /* background: #f5dd9c; */
     padding: 0px !important;
     position: relative;
 }
-section>div{
+/* section>div{ */
    /* border: 2px solid red; */
    /* min-height: 100%; */
    /* width: 110em; */
    
-}
+/* } */
 
 /* section>div.row{
     border: 2px solid red;
@@ -45,13 +46,14 @@ section>div{
     width: 100%;
 } */
 
-section>div.row>div.col-md-8,section>div.row>div.col-xs-12,section>div.row>div.col-sm-12,.place-center{
+section>div.row>div.col-md-8{
     /* border: 2px solid red; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
+    align-content: space-around;
+    gap: 5px;
 
 }
 
@@ -107,44 +109,11 @@ button{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    /* margin: 10px 0px !important; */
 
 }
 
-.b-g{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 20px;
-    width: 100rem;
-}
 
-.btc-find{
-    font-size: 24px !important;
-    width: 159px !important;
-    height: 50px;
-    background: #F48222 !important;
-    border:2px solid #F48222;
-    border-radius:13px !important;
-    display: flex;
-    flex-flow: row nowrap !important;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-}
-.btc-view{
-    font-size: 24px !important;
-    width: 254px;
-    height: 50px;
-    background: #F48222 !important;
-    border:2px solid #F48222;
-    border-radius:13px !important;
-    display: flex;
-    flex-flow: row nowrap !important;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-}
 #go-back{
     font-size: 24px !important;
     width: 254px;
@@ -234,19 +203,23 @@ button>img{
 
 
 
-*,p,h1,h2{
+*,p,h3{
     padding: 0px !important;
     margin: 0px !important;
 }
 /* nav section */
+nav>img{
+    width: 100px;
+    height: auto;
+}
 
 nav{
 
     /* border: 2px solid green; */
     /* width: 20rem; */
-    padding: 15px !important;
-    /* width: 100% !important;
-    height: auto; */
+    padding: 5px !important;
+    /* width: 100% !important;*/
+    height: auto; 
 }
 
 /* first section starts here*/
@@ -260,36 +233,44 @@ section{
 
 section>div.row{
    /* border: 2px solid red; */
-   height: 100% !important;
+   /* height: 100% !important; */
    /* width: 110em; */
    margin-top: 0px !important;
    
 }
+.intro-text>p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
 
+}
 
 
 section>div.row>div.col-sm-12{
     /* border: 2px solid red; */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-around;
+    align-items:center ;
+    align-content: center;
+    /* gap: 20px; */
     padding: 0px;
-    height: 100% !important;
+    height: 100vh !important;
 
 }
 
+/* This applies to the form on mobile view */
 section>div.row>div.col-md-8>div.row>.form-sec{
     /* width: 70rem; */
-    height: 28rem;
+    height: 28rem !important;
     /* border: 2px solid rgb(29, 13, 13); */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-evenly;
-    /* padding: 0px !important; */
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: space-evenly !important;
+    /* padding: 30px 0px !important; */
+    /* margin: 30px 0px !important; */
 }
 
 /* section>div.row>div.col-md-8>.row>form{
@@ -306,7 +287,8 @@ section>div.row>div.col-md-8>.row>form input{
     width: 255px;
     height: 42px;
 }
-div.bt{
+div.bt{/*form row for buttons (find, view location)*/
+    /* border: 2px solid rgb(182, 2, 32); */
     padding-top: 15px;
 }
 
@@ -314,11 +296,12 @@ button{
     font-size: 14px !important;
     width: 255px;
     height: 42px;
+    /* margin: 5px 0px !important; */
 
 }
 
 section>div.row>div.col-md-4{
-    height: 50rem !important;
+    height: 100vh !important;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     position: relative;
@@ -328,15 +311,18 @@ button>img{
     width: 20px;
 }
 
-#view{
+/* #view{
     position: absolute;
     top: 73%;
     right: 8px;
-}
+    border: 2px solid green;
+} */
 
 #map-section{
     display: none;
+    /* height: 100vh; */
 }
+
 /* country/flag/details-section */
 #flag{
     height: auto;
@@ -371,7 +357,7 @@ button>img{
 .inner-map-section{
     position: absolute;
     width: 47px;
-    bottom: 150px;
+    bottom: 80px;
     right: 20px;
 }
 #btn-view-map-section{
