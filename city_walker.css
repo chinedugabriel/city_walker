@@ -308,10 +308,10 @@ button>img{
 #country-detail-child-section{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center !important;
+    justify-content: space-around !important;
     align-items: center;
     /* border: 2px solid blue; */
-    height: 37em !important;
+    height: 100% !important;
     width:100% !important;
     gap: 15px !important;
 }
