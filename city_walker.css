@@ -248,9 +248,15 @@ section>div.row>div.col-md-8>div.row>.form-sec{
     justify-content: space-evenly !important;
     align-items: center !important;
     align-content: space-evenly !important;
-
+    
 }
 
+
+section>div.row#top-view>div#map-details-section>div.row{
+    height: 100vh !important;
+    border: 2px solid rgb(29, 13, 13);
+    
+}
 
 section>div.row>div.col-md-8>.row>form p{
     font-Weight:400px;
@@ -297,9 +303,9 @@ button>img{
 #country-detail-child-section{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
     align-items: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 40em !important;
     width:100% !important;
     /* gap: 20px; */
