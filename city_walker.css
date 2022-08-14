@@ -254,7 +254,12 @@ section>div.row>div.col-md-8>div.row>.form-sec{
 
 section>div.row#top-view>div#map-details-section>div.row{
     height: 100vh !important;
-    border: 2px solid rgb(29, 13, 13);
+    /* border: 2px solid rgb(29, 13, 13); */
+    /* padding: 10px 0px!important; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -303,13 +308,12 @@ button>img{
 #country-detail-child-section{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly !important;
+    justify-content: center !important;
     align-items: center;
     /* border: 2px solid blue; */
-    height: 40em !important;
+    height: 37em !important;
     width:100% !important;
-    /* gap: 20px; */
-    margin-bottom: 20px !important;
+    gap: 15px !important;
 }
 #country-detail-child-section>.row{
     width: 98%;
