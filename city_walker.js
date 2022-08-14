@@ -47,7 +47,6 @@ mapDetailsSection.style.display === "none";
 
 let toggleView = ()=>{
 
-        // console.log(viewLocationButton.name)
         if(mapDetailsSection.style.display === "none" ){
             findSectionForm.style.display = "none";
             // mapDetailsSection.classList.add("place-center");
@@ -62,8 +61,12 @@ let toggleView = ()=>{
             console.log(false);
         }
     
-
 }
 
 toggleView();
 
+// validate the form to check if the input value is a string and not an number or empty string
+
+// create a function to filter the Api for the country, city, and set the map location to the longitude and latitude for the country and if possible the user's location pointing to the destination  
+
+// if the condition is true show the view location and call the function that shows the map 
