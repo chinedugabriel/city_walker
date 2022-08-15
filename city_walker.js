@@ -6,17 +6,19 @@ setTimeout(()=>{
 /*
     HTML input tag
 */ 
-let country = document.getElementById("country").value;
-let city = document.getElementById("city").value;
-let from_location = document.getElementById("from").value;
-let to_location = document.getElementById("to").value;
 
 function testInput(){// this function is to test the input tags
+    let country = document.getElementById("country").value;
+    let city = document.getElementById("city").value;
+    let from_location = document.getElementById("from").value;
+    let to_location = document.getElementById("to").value;
+
+    if ( typeof country === "string" && typeof city === "string" && typeof from_location === "string" && typeof to_location === "string"){
+        
+        console.log(country +" "+ city +" "+ from_location.value +" "+ to_location);
     
-    if(country === "" && city ==="" && from_location ===""&& to_location ===""){
-        alert("Please provide your destination")
-    }else{
-    console.log(country +" "+ city +" "+ from_location +" "+ to_location);
+}else{
+        console.log("Please provide your destination")
     }
 }
 
@@ -24,19 +26,32 @@ function testInput(){// this function is to test the input tags
 
 // testing the API 
 
-// testApi = async ()=>{
-//     let url = "https://restcountries.com/v3.1/all";
+testApi = async ()=>{
+    let url = "https://restcountries.com/v3.1/all";
  
-//     let request = await fetch(url);
-//     if (request.status === 200){
-//         return request.json();
-//     }throw "Not found"
-//     // return request.json();
-// };
+    let request = await fetch(url);
+    if (request.status === 200){
+        return request.json();
+    }throw "Not found"
+    // return request.json();
+};
 
-// testApi().then(response => {
-//     console.log(response)
-// }).catch(error => console.log(error))
+testApi().then(response => {
+    // console.log(response);
+    let result = response.filter(countryList =>{
+        console.log(countryList.name.common)
+
+        // if (countryList.name.common == "japan"){
+        //     console.log(countryList.name.common)
+
+        // }
+
+    });
+
+    console.log(result);
+}).catch(error => console.log(error))
+
+
 
 // function to toggle between location details and the find section
 let viewLocationButton = document.getElementById("view-location");
